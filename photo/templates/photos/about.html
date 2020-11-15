@@ -1,0 +1,35 @@
+{% include 'photos/base.html' %}
+<section id="more" class="bg-secondary">
+  {% block content %}
+  <div class="container">
+      <div class="row text-center">
+          <div id="about" class="col-md-8 mx-auto">
+            <h1>About The Gallery</h1>
+            <p>Welcome to the gallery application. feel free to search the picture that you want</p>
+            <h3>You can search by:</h3>
+            <ul>
+                <li>Typing in the search bar category.Eithey by
+                    <ol>
+                        <li>sport</li>
+                        <li>food</li>
+                        <li>nature</li>
+                        <li>travell</li>
+                        <li>programming</li>
+                    </ol>
+                </li>
+                <hr class="text-light">
+                <li>Or by location:
+                    <ol>
+                        <li>Nairobi</li>
+                        <li>Kisumu</li>
+                        <li>Nakuru</li>
+                        <li>Mombasa</li>
+                    </ol>
+                </li>
+            </ul>
+          </div>
+      </div>
+  </div>
+
+  {% endblock %}
+</section>
