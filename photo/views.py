@@ -11,6 +11,7 @@ def index(request):
     Method to return all images, locations,categories
     '''
     images = Picture.objects.all()
+    ctx = {'images': images}  
     location = Location.objects.all()
     categories = Category.get_all_categories()
     context = {
@@ -18,7 +19,7 @@ def index(request):
         'location':location,
         "categorie": categories,
     }
-    return render(request, 'photos/index.html',context)
+    return render(request, 'photos/index.html',ctx)
 
 def search_results(request):
     '''

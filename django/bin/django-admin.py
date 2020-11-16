@@ -1,4 +1,4 @@
-#!/home/moringa/Desktop/django-week1ip/django/bin/python
+#!/home/moringa/Desktop/django-week1ip/django/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
